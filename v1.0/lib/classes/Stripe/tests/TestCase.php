@@ -8,7 +8,7 @@ namespace Stripe;
  */
 class TestCase extends \PHPUnit_Framework_TestCase
 {
-    const API_KEY = 'tGN0bIwXnHdwOa85VABjPdSn8nWY7G7I';
+    const API_KEY = '';
 
     private $mock;
 
