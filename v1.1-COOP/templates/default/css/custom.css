@@ -1,0 +1,466 @@
+/*hacken*/
+/** {*/
+/*font-family: "Helvetica Neue",*/
+/*Helvetica, sans-serif;*/
+/*font-size: 15px;*/
+/*font-variant: normal;*/
+/*padding: 0;*/
+/*margin: 0;*/
+/*}*/
+
+html {
+    height: 100%;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+body {
+    background: #F6F9FC;
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+}
+
+/*TEXT*/
+.text-error {
+    color: #ff282f;
+}
+
+.text-success {
+    color: #29b866;
+}
+
+.response_text {
+    font-size: 17px;
+}
+
+.sub_col {
+    padding: 0 10%;
+}
+
+/* Button */
+
+form.sub_form {
+    width: 100%;
+    margin: 80px auto;
+}
+
+.sub_form div.control, .summary label {
+    font-size: 20px;
+    position: relative;
+    color: #32315E;
+    font-weight: 400;
+    margin-bottom: 10px;
+    display: block;
+}
+
+p.description {
+    color: #6A7C94;
+}
+
+.form-control {
+    background: white;
+    box-sizing: border-box;
+    font-weight: 400;
+    border: 1px solid #CFD7DF;
+    border-radius: 4px;
+    color: #32315E;
+    outline: none;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 20px;
+    cursor: text;
+    width: 100%;
+    font-size: 15px;
+}
+
+input.form-control[type="checkbox"] {
+    margin-right: 20px;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #CFD7DF;
+}
+
+.form-control::-moz-placeholder {
+    color: #CFD7DF;
+}
+
+.form-control:-ms-input-placeholder {
+    color: #CFD7DF;
+}
+
+.form-control:focus,
+.form-control.StripeElement--focus {
+    border-color: #2cb419;
+}
+
+.sub_form button {
+    background-image: linear-gradient(-180deg, #29b866 0%, #2cb419 100%);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.10), inset 0 -1px 0 0 #a9e545;
+    color: white;
+    border-radius: 4px;
+    border: 0;
+}
+
+.sub_form button.redeem {
+    padding: 10px;
+    margin-top: 20px;
+    height: 48px;
+}
+
+.sub_form .input-group input {
+    margin-top: 20px;
+    float: left;
+}
+
+.sub_form button:focus {
+    background: #2cb419;
+    color: white;
+    font-weight: 900;
+    outline: none;
+}
+
+.sub_form button:active {
+    background: #2cb419;
+    color: white;
+    font-weight: 900;
+    outline: none;
+}
+
+.outcome {
+    float: left;
+    width: 100%;
+    padding-top: 8px;
+    min-height: 20px;
+    text-align: center;
+}
+
+.success, .error {
+    /*display: none;*/
+    font-size: 13px;
+}
+
+.success.visible, .error.visible {
+    display: inline;
+}
+
+.error {
+    color: #E4584C;
+}
+
+.success {
+    color: #F8B563;
+}
+
+.success .token {
+    font-weight: 500;
+    font-size: 13px;
+}
+
+/* .squaredOne Checkbox Style*/
+.login-form input[type="checkbox"], .signup-form input[type="checkbox"] {
+    /* Double-sized Checkboxes */
+    -ms-transform: scale(2); /* IE */
+    -moz-transform: scale(2); /* FF */
+    -webkit-transform: scale(2); /* Safari and Chrome */
+    -o-transform: scale(2); /* Opera */
+    padding: 10px;
+}
+
+.squaredOne {
+    width: 28px;
+    height: 28px;
+    position: relative;
+    display: inline-block;
+}
+
+.squaredOne label {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    cursor: pointer;
+    padding-left: 30px;
+}
+
+.squaredOne label:after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background: white;
+    box-shadow: inset 1px 1px 1px white, 1px 1px 3px rgb(0, 0, 0);
+}
+
+.squaredOne input[type=checkbox] {
+    visibility: hidden;
+}
+
+.squaredOne input[type=checkbox] + label:after {
+    background-color: white;
+}
+
+.squaredOne input[type=checkbox]:checked + label:after {
+    background: #27ae60;
+}
+
+.summary {
+    margin: 80px auto;
+    width: 100%;
+}
+
+.benefit {
+    margin-top: 20px;
+}
+
+.benefit ul {
+    padding: 10px 20px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.summary {
+    display: none;
+}
+
+.summary table {
+    margin-bottom: 40px;
+    font-size: 18px;
+    width: 100%;
+}
+
+.summary table th, .summary table td {
+    padding: 5px;
+}
+
+.summary table tr th {
+    color: black;
+    background: white;
+    font-weight: bold;
+}
+
+.summary .price {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.summary .team_size {
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+.sub_result {
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    position: relative;
+    padding: 50px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    text-align: center;
+    width: 100%;
+
+    transform: translateY(50%);
+}
+
+.sub_result p {
+    font-size: 18px;
+}
+
+.sub_result a {
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+.sub_result.success_sub h1 {
+    color: #29b866;
+    margin-bottom: 50px;
+}
+
+.sub_result.failed_sub h1 {
+    color: red;
+    margin-bottom: 50px;
+}
+
+.pri_button {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 35px;
+    outline: none;
+    background-image: linear-gradient(-180deg, #29b866 0%, #2cb419 100%) !important;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.10), inset 0 -1px 0 0 #a9e545 !important;
+    color: white !important;
+    border-radius: 4px;
+    border: 0;
+}
+
+.sec_button {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 35px;
+    outline: none;
+    background-image: linear-gradient(-180deg, #eea236 0%, #f0ad4e 100%) !important;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.10), inset 0 -1px 0 0 #a9e545 !important;
+    color: white !important;
+    border-radius: 4px;
+    border: 0;
+}
+
+.thr_button {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 35px;
+    outline: none;
+    background-image: linear-gradient(-180deg, #ee1a32 0%, #f02007 100%) !important;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.10), inset 0 -1px 0 0 #a9e545 !important;
+    color: white !important;
+    border-radius: 4px;
+    border: 0;
+}
+
+.mt50 {
+    margin-top: 50px;
+}
+
+#feedback_area {
+    width: 100%;
+}
+
+/*Login Page - Signup Page*/
+.form-only-content .login-form {
+    padding-top: 30%;
+}
+
+.form-only-content .signup-form {
+    padding-top: 10%;
+}
+
+#agree {
+    margin-left: 20px;
+}
+
+.sub_status {
+    padding-top: 5%;
+}
+
+/*Manage States Page*/
+.state_table {
+    width: 100%;
+}
+
+.state_table th {
+    padding: 10px;
+}
+
+.state_table tbody tr td {
+    padding: 10px;
+}
+
+.state_table .actions .fa {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+input[type=checkbox].sub_check {
+    height: 28px;
+    width: 28px;
+    cursor: pointer
+}
+
+.pri_button, .sec_button, .thr_button {
+    cursor: pointer !important;
+}
+
+.location_label {
+    margin-left: 37px;
+    margin-top: -28px;
+}
+
+.user_table {
+    display: block;
+    overflow-x: scroll;
+}
+
+.user_table th {
+    min-width: 50px;
+    padding: 10px;
+}
+
+.user_table th:last-child{
+    min-width: 100px;
+}
+
+.user_table td {
+    min-width: 50px;
+    padding: 5px 10px;
+}
+
+.loading {
+    visibility: hidden;
+    text-align: right;
+}
+
+.loader {
+    display: inline-block;
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #29b866;
+    border-bottom: 10px solid #29b866;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    animation: spin 2s linear infinite;
+    float: right;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*State List*/
+.multiselect-container{
+    padding: 5px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.multiselect-container > li > a > label.radio, .multiselect-container > li > a > label.checkbox {
+    text-align: left;
+}
+
+.multiselect-native-select > .btn-group, .multiselect-native-select > .btn-group > button {
+    width: 100%;
+}
+.multiselect-container > li > a > label.radio, .multiselect-container > li > a > label.checkbox{
+    font-size: 14px;
+}
+
+.multiselect-container  > li{
+    padding: 5px 0;
+}
+
+button.action{
+    display:inline-block;
+    padding: 4px
+}
+
+.text-center{
+    text-align: center;
+}
